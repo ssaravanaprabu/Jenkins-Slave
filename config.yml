@@ -1,9 +1,9 @@
 notificationEmail: 'janani.anitha@gmail.com'
 project:
-    gitUrl: 'https://github.com/ssaravanaprabu/helloworld.git'
+    gitUrl: 'https://github.com/ssaravanaprabu/app2.git'
     credentialsId: 'Github-ID'
 #    pomPathExtension: 'helloworld'
-    repoName: 'helloworld'
+    repoName: 'app2'
 fortify:
     buildVersion: '1.0'
     useExternalDependencyDirectory: false
@@ -22,7 +22,7 @@ deploymentBranchSetting:
 #   deployToArtifactory: true
 #   additionalMavenArgs: "-Dmaven.test.failure.ignore=true" 
     docker:
-      repo: 'helloworld'
+      repo: 'app2'
 #     tagIdentifier: '1.1'
       credentialsId: 'Docker-ID'
 #     dockerfilePathExtension: 'XXXXX'
@@ -36,7 +36,7 @@ deploymentBranchSetting:
       deployPrompts: true
       deployToEnv:
         - project: 'demo-openshift-project'  
-          app: 'helloworld' 
+          app: 'app2' 
           envName: 'dev'
 #        - project: 'demo-openshift-project'
 #          app: 'helloworld' 
